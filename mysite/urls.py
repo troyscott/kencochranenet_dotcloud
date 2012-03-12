@@ -22,7 +22,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     
     # redis stats
-    url(r'^redis/status/', include('redis_cache.stats.urls', namespace='redis_cache'))
+    url(r'^redis/status/', include('redis_cache.stats.urls', namespace='redis_cache')),
     
     # Main sections
     url(r'^activity/$', view='mysite.views.activity', name='main_activity'),
