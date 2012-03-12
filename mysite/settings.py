@@ -56,6 +56,8 @@ SITE_ID = 1
 MEDIA_ROOT = '/home/dotcloud/data/media/'
 STATIC_ROOT = '/home/dotcloud/data/static/'
 
+ADMIN_MEDIA_ROOT = '/home/dotcloud/data/static/admin/'
+
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
@@ -72,6 +74,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    '/home/dotcloud/current/static',
 )
 
 # List of finder classes that know how to find static files in
