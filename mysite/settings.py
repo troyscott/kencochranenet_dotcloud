@@ -61,8 +61,8 @@ ADMIN_MEDIA_ROOT = '/home/dotcloud/data/static/admin/'
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-STATIC_URL = '/static/'
-MEDIA_URL = STATIC_URL # they are the same because we use MEDIA_URL everywhere, and I'm lazy
+STATIC_URL = '/media/'
+MEDIA_URL = '/static/' # they are the backwards because we use MEDIA_URL everywhere, and I'm lazy
 
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
