@@ -2,8 +2,8 @@
 # this only works if you have the mysqlclient installed. Keeping it around for an example.
 
 # grab the username and password from the dotcloud environment.yml file
-dbuser=`grep DOTCLOUD_DB_SQL_LOGIN ~/environment.yml | cut -f2 -d' '`
-dbpass=`grep DOTCLOUD_DB_SQL_PASSWORD ~/environment.yml | cut -f2 -d' '`
+dbuser=`grep DOTCLOUD_DB_MYSQL_LOGIN ~/environment.yml | cut -f2 -d' '`
+dbpass=`grep DOTCLOUD_DB_MYSQL_PASSWORD ~/environment.yml | cut -f2 -d' '`
 
 # this is the database we want to create
 dbname="blogdb"

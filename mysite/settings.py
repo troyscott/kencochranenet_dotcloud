@@ -26,10 +26,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'blogdb',
-        'USER': env['DOTCLOUD_DB_SQL_LOGIN'],
-        'PASSWORD': env['DOTCLOUD_DB_SQL_PASSWORD'],
-        'HOST': env['DOTCLOUD_DB_SQL_HOST'],
-        'PORT': int(env['DOTCLOUD_DB_SQL_PORT']),
+        'USER': env['DOTCLOUD_DB_MYSQL_LOGIN'],
+        'PASSWORD': env['DOTCLOUD_DB_MYSQL_PASSWORD'],
+        'HOST': env['DOTCLOUD_DB_MYSQL_HOST'],
+        'PORT': int(env['DOTCLOUD_DB_MYSQL_PORT']),
     }
 }
 
