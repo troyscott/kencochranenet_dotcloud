@@ -1,0 +1,7 @@
+#!/bin/sh
+python createdb.py default
+python mysite/manage.py syncdb --noinput
+python mysite/manage.py migrate
+python mkadmin.py
+mkdir -p /home/dotcloud/data/media /home/dotcloud/data/static
+python mysite/manage.py collectstatic --noinput

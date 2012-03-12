@@ -1,0 +1,13 @@
+www:
+  type: python
+db:
+  type: mysql
+cache:
+  type: redis
+# mailer:
+#   type: smtp
+#   config:
+#       smtp_relay_server: smtp.gmail.com
+#       smtp_relay_port: 587
+#       smtp_relay_username: yourgoogleusername@gmail.com
+#       smtp_relay_password: YourGmailPassword
