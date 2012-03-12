@@ -1,9 +1,11 @@
 import MySQLdb
 import os
-
+from wsgi import *
 
 def create_dbs(names):
+    print("create_dbs: let's go.")
     django_settings = __import__(os.environ['DJANGO_SETTINGS_MODULE'], fromlist='DATABASES')
+    print("create_dbs: got settings.")
     databases = django_settings.DATABASES
     for name, db in databases.iteritems():
         if name in names and db['ENGINE'].endswith('mysql'):
@@ -34,4 +36,6 @@ def create_dbs(names):
 
 if __name__ == '__main__':
     import sys
+    print("create_dbs start")
     create_dbs(sys.argv[1:])
+    print("create_dbs all done")
