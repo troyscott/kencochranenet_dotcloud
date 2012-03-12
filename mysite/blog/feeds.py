@@ -6,10 +6,10 @@ from mysite.blog.models import Entry
 from tagging.models import Tag, TaggedItem
 from django.contrib.sites.models import Site
 
-from mysite.deploy import SITE_TITLE
+from django.conf import settings
 
 class LatestEntriesFeed(Feed):
-    title = SITE_TITLE
+    title = settings.SITE_TITLE
     link = "/"
     
     def items(self):
