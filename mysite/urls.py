@@ -21,9 +21,6 @@ urlpatterns = patterns('',
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
     
-    # redis stats
-    url(r'^redis/status/', include('redis_cache.stats.urls', namespace='redis_cache')),
-    
     # Main sections
     url(r'^activity/$', view='mysite.views.activity', name='main_activity'),
     url(r'^activity/page/(?P<page>\d+)/$',

@@ -1,7 +1,7 @@
 import MySQLdb
 import os
 from wsgi import *
-
+ 
 def create_dbs(names):
     print("create_dbs: let's go.")
     django_settings = __import__(os.environ['DJANGO_SETTINGS_MODULE'], fromlist='DATABASES')

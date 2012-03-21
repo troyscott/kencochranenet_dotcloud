@@ -150,7 +150,6 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'django.contrib.staticfiles',
     'south',
-    'redis_cache.stats',
 )
 
 # Activity sync settings
